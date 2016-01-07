@@ -26,6 +26,23 @@
 				<target>1.8</target>
 			</configuration>
 		</plugin>
+		<plugin>  
+               <groupId>org.apache.maven.plugins</groupId>  
+               <artifactId>maven-jxr-plugin</artifactId>  
+               <version>2.1</version>  
+               <configuration>  
+                 <aggregate>true</aggregate>  
+               </configuration>  
+             </plugin>  
+             <!-- Checks projects code conventions -->  
+             <plugin>  
+               <groupId>org.apache.maven.plugins</groupId>  
+               <artifactId>maven-checkstyle-plugin</artifactId>  
+               <version>2.6</version>  
+               <configuration>  
+                 <configLocation>check_style.xml</configLocation>  
+               </configuration>  
+             </plugin>  
 	  </plugins>
 	</build>
 </project>
